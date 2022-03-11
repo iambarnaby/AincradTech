@@ -1,18 +1,18 @@
-const path = require('path')
+const path = require("path");
 module.exports = {
   siteMetadata: {
     name: `Hello Typescript World!`,
-    tagline: `Gatsby + SASS + Typescript = 💪`
-  },  
+    tagline: `Gatsby + SASS + Typescript = 💪`,
+  },
   plugins: [
-    `gatsby-plugin-sass`,
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-tslint`,
     {
-      resolve: 'gatsby-plugin-root-import',
+      resolve: "gatsby-plugin-root-import",
       options: {
-        "src": path.join(__dirname, "src"),
-      }
-    }
+        src: path.join(__dirname, "src"),
+      },
+    },
   ],
-}
+};

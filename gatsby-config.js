@@ -2,7 +2,7 @@ const path = require("path");
 module.exports = {
   siteMetadata: {
     name: `Hello Typescript World!`,
-    tagline: `Gatsby + SASS + Typescript = 💪`,
+    tagline: `Gatsby + SASS (but maybe also kinda tailwindcss) + Typescript = 💪`,
   },
   plugins: [
     `gatsby-plugin-postcss`,

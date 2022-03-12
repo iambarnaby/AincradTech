@@ -5,11 +5,15 @@ type Props = {
   label: string;
 };
 
-interface CoolProps {
-  name?: string;
-  age?: number;
+interface NavProps {
+  passType: Function;
 }
-const NavigationLeft: FC<CoolProps> = (props) => {
+
+const NavigationLeft = (passToAppContent: NavProps) => {
+  const handleContentType = (contentType: string) => {
+    passToAppContent.passType(contentType);
+  };
+
   return (
     <div className=" h-[100%] w-[313px] bg-white flex flex-col font-poppins">
       <div className=" relative flex flex-col items-end top-[48px] w-[auto] gap-[124px] ">
@@ -29,7 +33,7 @@ const NavigationLeft: FC<CoolProps> = (props) => {
           <span className=" font-semibold text-[27px]">Stringle</span>
         </div>
         <div className="relative">
-          <DashboardButtons />
+          <DashboardButtons handleContent={handleContentType} />
         </div>
       </div>
     </div>

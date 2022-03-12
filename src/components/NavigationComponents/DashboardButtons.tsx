@@ -1,22 +1,16 @@
 import React, { FC, useEffect, useState } from "react";
 
-interface IisSelected {
-  one: boolean;
-  two: boolean;
-  three: boolean;
+interface Props {
+  handleContent: Function;
 }
-const DashboardButtons: FC = () => {
-  const [isSelected, setIsSelected] = useState({
-    one: true,
-    two: false,
-    three: false,
-  });
-  const [currButton, setCurrButton] = useState("dashboardButton");
 
+const DashboardButtons = (handleContent: Props) => {
+  const [currButton, setCurrButton] = useState("dashboardButton");
   const [prevButton, setPrevButton] = useState("");
 
   useEffect(() => {
     handleButtonChange(currButton, prevButton);
+    handleContent.handleContent(currButton);
   }, [currButton]);
 
   const handleButtonChange = (currButton: string, prevButton: string) => {
@@ -26,6 +20,7 @@ const DashboardButtons: FC = () => {
     ];
     elem[0].style.opacity = "1";
     elem[1].style.opacity = "1";
+
     if (prevButton) {
       const prevElem = [
         document.getElementById(prevButton) as HTMLElement,

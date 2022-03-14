@@ -1,18 +1,17 @@
 import React, { FC } from "react";
+import { useSelector } from "react-redux";
 import DashboardButtons from "./NavigationComponents/DashboardButtons";
 
-type Props = {
-  label: string;
-};
-
 interface NavProps {
-  passType: Function;
+  passType: (content: string) => void;
 }
 
 const NavigationLeft = (passToAppContent: NavProps) => {
   const handleContentType = (contentType: string) => {
     passToAppContent.passType(contentType);
   };
+
+  /* */
 
   return (
     <div className=" h-[100%] w-[313px] bg-white flex flex-col font-poppins">

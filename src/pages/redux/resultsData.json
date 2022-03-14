@@ -1,0 +1,73 @@
+{
+  "latestResults": [
+    {
+      "name": "Technology",
+      "resultsByUnit": [
+        { "unit": "1", "percentage": 25 },
+        { "unit": "2", "percentage": 30 },
+        { "unit": "3", "percentage": 55 },
+        { "unit": "5", "percentage": 25 }
+      ]
+    },
+    {
+      "name": "Ecology",
+      "resultsByUnit": [
+        { "unit": "1", "percentage": 25 },
+        { "unit": "2", "percentage": 30 },
+        { "unit": "3", "percentage": 55 },
+        { "unit": "12", "percentage": 44 }
+      ]
+    },
+    {
+      "name": "Real Estate",
+      "resultsByUnit": [
+        { "unit": "1", "percentage": 25 },
+        { "unit": "2", "percentage": 30 },
+        { "unit": "3", "percentage": 55 },
+        { "unit": "9", "percentage": 40 }
+      ]
+    },
+    {
+      "name": "Education",
+      "resultsByUnit": [
+        { "unit": "1", "percentage": 25 },
+        { "unit": "2", "percentage": 30 },
+        { "unit": "3", "percentage": 55 },
+        { "unit": "8", "percentage": 15 }
+      ]
+    },
+    {
+      "name": "Job Market",
+      "resultsByUnit": [
+        { "unit": "1", "percentage": 25 },
+        { "unit": "2", "percentage": 30 },
+        { "unit": "3", "percentage": 55 },
+        { "unit": "16", "percentage": 75 }
+      ]
+    }
+  ],
+  "timeSpent": {
+    "weekOne": {
+      "vocab": {
+        "id": "vocab",
+        "color": "#FF808B",
+        "hoursSpent": [0, 1, 3, 1, 4, 0, 0]
+      },
+      "grammar": {
+        "id": "gram",
+        "color": "#4D4CAC",
+        "hoursSpent": [0, 4, 2, 4, 1, 0, 0]
+      },
+      "listening": {
+        "id": "listen",
+        "color": "#5E81F4",
+        "hoursSpent": [0, 3, 1, 1, 4, 1, 0]
+      },
+      "writting": {
+        "id": "write",
+        "color": "#C8C9E9",
+        "hoursSpent": [0, 1, 3, 1, 2, 2, 0]
+      }
+    }
+  }
+}

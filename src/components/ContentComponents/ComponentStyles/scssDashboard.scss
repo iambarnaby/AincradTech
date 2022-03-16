@@ -1,0 +1,76 @@
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+.Container {
+  max-width: 60rem;
+  margin: 3rem auto 0;
+  font-family: sans-serif;
+
+  h1 {
+    color: #333;
+  }
+
+  p {
+    color: #aaa;
+  }
+}
+
+.results-container {
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  padding-bottom: 27px;
+  padding-top: 25px;
+  border-bottom-width: 1.5px;
+  border-color: black;
+  .results-percentage {
+    margin-left: auto;
+  }
+  .positive-result {
+    color: #5e81f4;
+  }
+  .negative-result {
+    color: #ff808b;
+  }
+}
+.last {
+  border-bottom: 0px;
+}
+
+.scss-dashboard-container {
+  background-color: white;
+  border-radius: 17px;
+  height: 465px;
+  width: 430px;
+  padding-top: 31px;
+  padding-left: 32px;
+  padding-right: 32px;
+  display: grid;
+  grid-template-rows: auto 3fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  row-gap: 18px;
+  .title {
+    font-weight: 500;
+    font-size: 17px;
+  }
+  .title-more-cta {
+    @include flexCenter(row);
+    justify-content: end;
+    font-weight: 400;
+    font-size: 16px;
+    gap: 0.75rem;
+    cursor: pointer;
+  }
+  .content {
+    grid-column: span 2 / span 2;
+    .curriculum-class-name {
+      margin-left: 0.25rem;
+      opacity: 50%;
+    }
+  }
+}

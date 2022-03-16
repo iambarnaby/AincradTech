@@ -1,0 +1,97 @@
+.Container {
+  max-width: 60rem;
+  margin: 3rem auto 0;
+  font-family: sans-serif;
+}
+
+.Container h1 {
+  color: #333;
+}
+
+.Container p {
+  color: #aaa;
+}
+
+.results-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  padding-bottom: 27px;
+  padding-top: 25px;
+  border-bottom-width: 1.5px;
+  border-color: black;
+}
+
+.results-container .results-percentage {
+  margin-left: auto;
+}
+
+.results-container .positive-result {
+  color: #5e81f4;
+}
+
+.results-container .negative-result {
+  color: #ff808b;
+}
+
+.last {
+  border-bottom: 0px;
+}
+
+.scss-dashboard-container {
+  background-color: white;
+  border-radius: 17px;
+  height: 465px;
+  width: 430px;
+  padding-top: 31px;
+  padding-left: 32px;
+  padding-right: 32px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 3fr;
+      grid-template-rows: auto 3fr;
+  -ms-grid-columns: (minmax(0, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+  row-gap: 18px;
+}
+
+.scss-dashboard-container .title {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.scss-dashboard-container .title-more-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  font-weight: 400;
+  font-size: 16px;
+  gap: 0.75rem;
+  cursor: pointer;
+}
+
+.scss-dashboard-container .content {
+  grid-column: span 2 / span 2;
+}
+
+.scss-dashboard-container .content .curriculum-class-name {
+  margin-left: 0.25rem;
+  opacity: 50%;
+}
+/*# sourceMappingURL=scssDashboard.css.map */

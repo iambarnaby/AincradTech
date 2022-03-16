@@ -1,13 +1,14 @@
 import { data } from "autoprefixer";
 import React from "react";
 import { useSelector } from "react-redux";
+import ScssDashboard from "./scssDashboard";
 
 const DashboardPage = () => {
   const { results } = useSelector((state) => state.data);
   console.log(results.latestResults.technology);
   return (
     <div className="flex pl-[42px] pt-[118px] gap-[39px] font-poppins">
-      {/* */}
+      {/*Latest Results*/}
 
       <div className=" bg-white rounded-[17px] h-[465px] w-[430px] pt-[31px] px-[32px] grid grid-rows-[auto_3fr] grid-cols-2 gap-y-[18px]">
         <div className=" font-medium text-[17px]">Latest Results</div>
@@ -60,8 +61,8 @@ const DashboardPage = () => {
         </div>
       </div>
 
-      {/* */}
-
+      {/*scssDashboard*/}
+      <ScssDashboard />
       <div className=" w-[558px] h-[465px] bg-white rounded-[17px]">
         Time Spend on Learning
       </div>

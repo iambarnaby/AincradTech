@@ -25,16 +25,14 @@
   border-color: black;
 }
 
-.results-container .results-percentage {
-  margin-left: auto;
-}
-
 .results-container .positive-result {
   color: #5e81f4;
+  margin-left: auto;
 }
 
 .results-container .negative-result {
   color: #ff808b;
+  margin-left: auto;
 }
 
 .last {

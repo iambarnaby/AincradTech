@@ -1,14 +1,14 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import "./ComponentStyles/scssDashboard.css";
+import styles from "../../styles/scssDashboard.module.scss";
 
 const ScssDashboard = () => {
   const { results } = useSelector((state) => state.data);
   return (
-    <div className="scss-dashboard-container">
-      <div className="title">Latest Results</div>
+    <div className={styles.container}>
+      <div className={styles.title}>Latest Results</div>
 
-      <div className="title-more-cta">
+      <div className={styles.more}>
         more
         <svg
           width="16"
@@ -24,26 +24,27 @@ const ScssDashboard = () => {
         </svg>
       </div>
 
-      <div className="content">
-        <div className="">
+      <div className={styles.content}>
+        <div className={styles.results}>
           {results.latestResults.map((classes, index: number) => (
             <div
-              className={`results-container ${
-                index < results.latestResults.length - 1 ? " " : " last"
+              className={
+                index < results.latestResults.length - 1
+                  ? styles.subject
+                  : styles.last
               }
-                `}
             >
               {"Unit " +
                 classes.resultsByUnit[classes.resultsByUnit.length - 1].unit +
                 " -"}
-              <div className="curriculum-class-name">{classes.name}</div>
+              <div className={styles.curriculum}>{classes.name}</div>
               <div
-                className={`result-percentage ${
+                className={
                   classes.resultsByUnit[classes.resultsByUnit.length - 1]
                     .percentage <= 25
-                    ? " negative-result"
-                    : "positive-result"
-                }`}
+                    ? styles.negative
+                    : styles.positive
+                }
               >
                 {classes.resultsByUnit[classes.resultsByUnit.length - 1]
                   .percentage + "%"}

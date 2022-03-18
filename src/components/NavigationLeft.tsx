@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { useSelector } from "react-redux";
-import DashboardButtons from "./NavigationComponents/DashboardButtons";
+import DashboardButtons from "./navigation/DashboardButtons";
 
 interface NavProps {
   passType: (content: string) => void;

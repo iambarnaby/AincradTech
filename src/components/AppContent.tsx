@@ -1,7 +1,7 @@
 import React, { FC, useState } from "react";
-import ClassesPage from "./ContentComponents/ClassesPage";
-import DashboardPage from "./ContentComponents/DashboardPage";
-import ResourcesPage from "./ContentComponents/ResourcesPage";
+import ClassesPage from "./content/ClassesPage";
+import DashboardPage from "./content/DashboardPage";
+import ResourcesPage from "./content/ResourcesPage";
 
 interface AppContentProps {
   content: string;

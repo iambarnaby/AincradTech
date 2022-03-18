@@ -8,6 +8,7 @@ module.exports = {
     `gatsby-plugin-postcss`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-tslint`,
+    `gatsby-plugin-sass`,
     {
       resolve: "gatsby-plugin-root-import",
       options: {

@@ -5,43 +5,7 @@
   flex-direction: $direction;
 }
 
-.Container {
-  max-width: 60rem;
-  margin: 3rem auto 0;
-  font-family: sans-serif;
-
-  h1 {
-    color: #333;
-  }
-
-  p {
-    color: #aaa;
-  }
-}
-
-.results-container {
-  display: flex;
-  font-size: 16px;
-  font-weight: 600;
-  width: 100%;
-  padding-bottom: 27px;
-  padding-top: 25px;
-  border-bottom-width: 1.5px;
-  border-color: black;
-  .positive-result {
-    color: #5e81f4;
-    margin-left: auto;
-  }
-  .negative-result {
-    color: #ff808b;
-    margin-left: auto;
-  }
-}
-.last {
-  border-bottom: 0px;
-}
-
-.scss-dashboard-container {
+.container {
   background-color: white;
   border-radius: 17px;
   height: 465px;
@@ -57,7 +21,7 @@
     font-weight: 500;
     font-size: 17px;
   }
-  .title-more-cta {
+  .more {
     @include flexCenter(row);
     justify-content: end;
     font-weight: 400;
@@ -67,9 +31,36 @@
   }
   .content {
     grid-column: span 2 / span 2;
-    .curriculum-class-name {
+    .curriculum {
       margin-left: 0.25rem;
       opacity: 50%;
+    }
+    .results {
+      display: flex;
+      flex-direction: column;
+      .subject,
+      .last {
+        display: flex;
+        flex-direction: row;
+        font-size: 16px;
+        font-weight: 600;
+        width: 100%;
+        padding-bottom: 27px;
+        padding-top: 25px;
+        border-bottom-width: 1.5px;
+        border-color: black;
+      }
+      .last {
+        border-bottom: 0px !important;
+      }
+      .positive {
+        color: #5e81f4;
+        margin-left: auto;
+      }
+      .negative {
+        color: #ff808b;
+        margin-left: auto;
+      }
     }
   }
 }

@@ -4,19 +4,19 @@ import DashboardPage from "./content/DashboardPage";
 import ResourcesPage from "./content/ResourcesPage";
 
 interface AppContentProps {
-  content: string;
+  props: string;
 }
 
-const AppContent = (content: AppContentProps) => {
+const AppContent = (prop: AppContentProps) => {
   const renderContent = (content: string) => {
     switch (content) {
-      case "dashboardButton":
+      case "Dashboard":
         return <DashboardPage />;
         break;
-      case "classesButton":
+      case "Classes":
         return <ClassesPage />;
         break;
-      case "resourcesButton":
+      case "Resources":
         return <ResourcesPage />;
         break;
       default:
@@ -25,7 +25,7 @@ const AppContent = (content: AppContentProps) => {
   };
   return (
     <div className="relative h-100%  bg-[#F5F5FB]">
-      <div>{renderContent(content.content)}</div>
+      <div>{renderContent(prop.props)}</div>
     </div>
   );
 };

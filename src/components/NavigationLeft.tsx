@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import { useSelector } from "react-redux";
 import DashboardButtons from "./navigation/DashboardButtons";
+import DashboardButtonsRemade from "./navigation/DashboardButtonsRemade";
 
 interface NavProps {
   passType: (content: string) => void;
@@ -32,7 +33,9 @@ const NavigationLeft = (passToAppContent: NavProps) => {
           <span className=" font-semibold text-[27px]">Stringle</span>
         </div>
         <div className="relative">
-          <DashboardButtons handleContent={handleContentType} />
+          {/*<DashboardButtons handleContent={handleContentType} />
+           */}
+          <DashboardButtonsRemade handleContent={handleContentType} />
         </div>
       </div>
     </div>

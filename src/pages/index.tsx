@@ -20,7 +20,7 @@ export default class IndexPage extends React.Component<{}, {}> {
       <div className=" h-[100vh] flex flex-row bg-[#F5F5FB]">
         <Provider store={store}>
           <NavigationLeft passType={this.handleContentTypeForAppContent} />
-          <AppContent content={this.state.currContent} />
+          <AppContent props={this.state.currContent} />
         </Provider>
       </div>
     );

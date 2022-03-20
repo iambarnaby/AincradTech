@@ -3,13 +3,13 @@ import { useSelector } from "react-redux";
 import DashboardButtons from "./navigation/DashboardButtons";
 import DashboardButtonsRemade from "./navigation/DashboardButtonsRemade";
 
-interface NavProps {
+interface Props {
   passType: (content: string) => void;
 }
 
-const NavigationLeft = (passToAppContent: NavProps) => {
+const NavigationLeft = ({ passType }: Props) => {
   const handleContentType = (contentType: string) => {
-    passToAppContent.passType(contentType);
+    passType(contentType);
   };
 
   /* */

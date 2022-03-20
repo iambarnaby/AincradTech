@@ -5,10 +5,18 @@ import NavigationLeft from "src/components/NavigationLeft";
 import styles from "src/styles/Index.module.scss";
 import store from "../redux/store";
 import { Provider } from "react-redux";
-export default class IndexPage extends React.Component<{}, {}> {
-  state = {
-    currContent: "",
-  };
+
+interface State {
+  currContent: string;
+}
+
+export default class IndexPage extends React.Component<{}, State> {
+  constructor(props: Function) {
+    super(props);
+    this.state = {
+      currContent: "",
+    };
+  }
 
   /* Grabbing input from child comp */
   handleContentTypeForAppContent = (content: string) => {
@@ -20,7 +28,7 @@ export default class IndexPage extends React.Component<{}, {}> {
       <div className=" h-[100vh] flex flex-row bg-[#F5F5FB]">
         <Provider store={store}>
           <NavigationLeft passType={this.handleContentTypeForAppContent} />
-          <AppContent props={this.state.currContent} />
+          <AppContent content={this.state.currContent} />
         </Provider>
       </div>
     );

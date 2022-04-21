@@ -1,3 +1,5 @@
+### This is a demo app for [Aincrad Tech](https://www.aincradtech.com) 🍊
+
 # Gatsby Starter: Typescript + SASS
 Starter with the essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site. This setup includes:
 
@@ -9,3 +11,4 @@ Install this starter by running this from your [Gatsby CLI](https://next.gatsbyj
 ```
 gatsby new gatsby-site https://github.com/tdharmon/gatsby-starter-typescript-sass
 ```
+

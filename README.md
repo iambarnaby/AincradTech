@@ -1,5 +1,7 @@
 ### This is a demo app for [Aincrad Tech](https://www.aincradtech.com) 🍊
 
+#### This demo utilises Typescript, SASS(scss) TailwindCSS, Gatsbyjs and Redux-Toolkit
+
 # Gatsby Starter: Typescript + SASS
 Starter with the essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site. This setup includes:
 
